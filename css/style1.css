@@ -2,8 +2,9 @@
    background-image: url("background3.jpg");
 }
 h1{	
+	background-color: tomato;
 	text-align: center;
-	color: #c1121f
+	color: #dad7cd;
 }
 h2{
 	text-align: center;
