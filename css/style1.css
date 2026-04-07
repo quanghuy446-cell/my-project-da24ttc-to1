@@ -1,1 +1,47 @@
-﻿
+﻿ body{
+   background-image: url("background.jpg");
+}
+h1{	
+	text-align: center;
+	color: #c1121f
+}
+h2{
+	text-align: center;
+	color: #ae2012
+}
+h3{
+	font-size: 23px;
+	font-family: Arial;
+	color: red;
+}
+h4{
+	font-size: 23px;
+	font-family: Arial;
+	color: red;
+}
+li{
+	font-size: 23px;
+	font-family: Arial;
+}
+p{
+	font-size: 20px;
+	font-family: Arial;
+}
+.table1{
+	width: auto;
+	height: auto;
+    border: 1px solid #023047;
+	border-radius: 4px;
+	padding: 2px;
+	background-color: #a3b18a;
+}
+.table2, th ,td{
+    width: auto;
+	height: auto;
+    border: 1px solid #023047;
+	border-radius:3px;
+	padding: 4px;
+	background-color: #a3b18a;
+	font-family: Arial;
+	font-size: 20px;
+}
