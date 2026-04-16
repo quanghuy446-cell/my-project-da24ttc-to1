@@ -1,39 +1,52 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background-color: rgb(147, 208, 236);
+body {
+    background-color: #1e1e1e;
+    font-family: Arial, sans-serif;
+    padding-top: 70px;
 }
-.container{
-    margin-top: 70px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 17px;
-    background-color: rgb(80, 231, 181);
-    border: 3px solid #241c1c;
-    
+.container {
+    width: 450px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #8c97aa;
+    border: 2px solid #241c1c;
+    border-radius: 8px;
 }
-.title{
-    text-decoration: solid;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.title {
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f7f4f4;
+    text-transform: uppercase;
 }
-form#frmLogin{
-    background-color: rgb(80, 231, 181);
-    margin-left: 40px;
-    margin-right: 40px;
-    border-radius: 7px;
+.formgroup {
+    margin-bottom: 15px;
 }
-.formgroup{
-    padding: 5px;
-    text-decoration: solid;
-    padding: 5px;
+.formgroup label {
+    display: inline-block;
+    width: 130px;
+    font-weight: bold;
 }
-.formcontrol{
-    padding: 3px;
-    border-radius: 3px;
-    padding: 5px;
-    border
-
+.formcontrol {
+    width: 260px;
+    padding: 7px;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+.button {
+    padding: 8px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #241c1c;
+    border-radius: 4px;
+    background-color: #f0f0f0;
 }
