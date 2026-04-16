@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">	
+<head>		
+    <meta charset="utf-8">		
+    <title>Thiết kế form đăng ký</title>
+    <link rel="stylesheet" href="../css/style3.css">
+</head>
+<body>
+    <div class="container">
+        <form id="frmdangky">
+            <h3 class="title">Thông tin sinh viên</h3>
+            <div class="formgroup">
+                <label for="txtName">Họ tên:</label>
+                <input class="formcontrol" type="text" id="txtName" name="txtName" placeholder="Nhập họ tên">
+            </div>
+            <div class="formgroup">
+                <label for="txtBirthday">Ngày sinh:</label>
+                <input class="formcontrol" type="date" id="txtBirthday" name="txtBirthday">
+            </div>
+            <div class="formgroup">
+                <label>Giới tính:</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender" value="Nam"> <label for="male">Nam</label>
+                    <input type="radio" id="female" name="gender" value="Nu"> <label for="female">Nữ</label>
+                </div>
+            </div>
+            <div class="formgroup">
+                <label for="txtAddress">Địa chỉ:</label>
+                <input class="formcontrol" type="text" id="txtAddress" name="txtAddress" placeholder="Nhập địa chỉ">
+            </div>
+            <div class="formgroup">
+                <label for="txtMSSV">MSSV:</label>
+                <input class="formcontrol" type="text" id="txtMSSV" name="txtMSSV" placeholder="Nhập mã số sinh viên">
+            </div>
+            <div class="formgroup">
+                <label for="selClass">Lớp:</label>
+                <select class="formcontrol" id="selClass" name="selClass">
+                    <option value="DA24TTA">DA24TTA</option>
+                    <option value="DA24TTB">DA24TTB</option>
+                    <option value="DA24TTC">DA24TTC</option>
+                    <option value="DA24TTD">DA24TTD</option>
+                </select>
+            </div>
+            <div class="formgroup">
+                <label for="txtPhone">Số điện thoại:</label>
+                <input class="formcontrol" type="tel" id="txtPhone" name="txtPhone" placeholder="Nhập số điện thoại">
+            </div>
+            <div class="formgroup">
+                <label for="txtEmail">Email:</label>
+                <input class="formcontrol" type="email" id="txtEmail" name="txtEmail" placeholder="Nhập email">
+            </div>
+            <div class="formgroup">
+                <label>Điểm mạnh:</label>
+                <div class="diemmanh">
+                    <input type="checkbox" name="diemmanh" value="Code"> Lập trình
+                    <input type="checkbox" name="diemmanh" value="Design"> Thiết kế
+                    <input type="checkbox" name="diemmanh" value="English"> Tiếng Anh
+                </div>
+            </div>
+            <div class="formgroup">
+                <label for="hinhanh">Hình ảnh:</label>
+                <input class="formcontrol" type="file" id="hinhanh" accept="image/*">
+            </div>
+            <div class="button-group">
+                <input class="button" type="submit" value="Đăng ký">
+                <input class="button" type="reset" value="Hủy bỏ">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
