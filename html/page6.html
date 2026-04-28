@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">	
+<head>		
+    <meta charset="utf-8">		
+    <title></title>
+    <link rel="stylesheet" href="../css/style6.css">
+</head>
+<body>
+    <script>
+        const newDiv =document.createElement("div");
+        newDiv.setAttribute("class", "product-item");
+        const productImage = document.createElement("div");
+        productImage.setAttribute("class", "product-image");
+        const productImageNode = document.createElement("img");
+        productImageNode.setAttribute("src", "../assets/images/dao.jpg");
+        productImage.appendChild(productImageNode);
+        newDiv.appendChild(productImage);
+        document.body.appendChild(newDiv);
+        const productInfo = document.createElement("div");
+        productInfo.setAttribute("class", "product-info");
+        const productName = document.createElement("h2");
+        productName.textContent = "Dao Nhật";
+        const productPrice = document.createElement("p");
+        productPrice.textContent = "Giá: 3.690.000đ";
+        productInfo.appendChild(productName);
+        productInfo.appendChild(productPrice);
+        newDiv.appendChild(productInfo);
+    </script>
+</body>
+</html>
