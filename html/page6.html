@@ -2,25 +2,18 @@
 <html lang="vi">
 <head>
     <meta charset="utf-8">
-    <title>Trang Sản phẩm</title>
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style6.css">
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script scr = "../js/lib.js"></script>
+    <script src="../js/lib.js"></script>
 </head>
 <body>
-    <div class = "comtainer">
-        <div class = "product-list" row row-cols-1 row-cols-4 row-cols-4 g-4 id = "product-list">
-
+    <div class="container">
+        <div class="row row-cols-4 g-4" id="product-list">
         </div>
     </div>
     <script>
-        productlist.forEach(function(item) {
-            addProduct(item.id, item.name, item.price, item.image, item.productLink);
-        });
+        loadProduct(productlist);
     </script>
 </body>
 </html>

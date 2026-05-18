@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập DOM</title>
+    <link rel="stylesheet" href="../css/style7.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Màu nền: Mặc định</h1>
+        <button id="colorBtn" onclick="changeColor()">Đổi màu nền</button>
+    </div>
+    <script>
+        const hexColors = ["#FF5733", "#33FF57", "#3357FF", "#F3FF33", "#FF33F3", "#9B59B6", "#1ABC9C", "#E67E22"];
+        function changeColor() {
+            const randomIndex = Math.floor(Math.random() * hexColors.length);
+            const randomColor = hexColors[randomIndex];
+            document.body.style.backgroundColor = randomColor;
+            document.getElementById("title").textContent = "Màu nền: " + randomColor;
+        }
+    </script>
+</body>
+</html>
